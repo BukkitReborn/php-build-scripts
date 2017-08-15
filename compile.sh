@@ -197,7 +197,7 @@ if [ "$IS_CROSSCOMPILE" == "yes" ]; then
 		COMPILE_FOR_ANDROID=yes
 		[ -z "$march" ] && march="armv8-a";
 		[ -z "$mtune" ] && mtune=generic;
-		TOOLCHAIN_PREFIX="aarch64-linux-musl"
+		TOOLCHAIN_PREFIX="arm-linux-gnueabi"
 		CONFIGURE_FLAGS="--host=$TOOLCHAIN_PREFIX --disable-ipv6"
 		CFLAGS="-static $CFLAGS"
 		CXXFLAGS="-static $CXXFLAGS"
